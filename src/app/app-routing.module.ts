@@ -11,6 +11,8 @@ import {LoginComponent} from './login/login.component';
 import {AdminTemplateComponent} from './admin-template/admin-template.component';
 import {AuthGuard} from './guards/auth.guard';
 import {AuthorizationGuard} from './guards/authorization.guard';
+import {StudentDetailsComponent} from './student-details/student-details.component';
+import {NewPayementComponent} from './new-payement/new-payement.component';
 
 const routes: Routes = [
   {path:"",component:LoginComponent},
@@ -27,6 +29,9 @@ const routes: Routes = [
       {path:"dashboard",component:DashboardComponent},
       {path:"students",component:StudentsComponent},
       {path:"payements",component:PayementsComponent},
+      {path:"student-details/:code",component:StudentDetailsComponent},
+      {path:"new-payement/:studentCode",component:NewPayementComponent},
+
 
     ]},
 
